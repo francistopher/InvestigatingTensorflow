@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+   <head>
+      <title>{{ title }}</title>
+   </head>
+   <body>
+
+      <h1 style='display: inline;'>The Metaphorically Speaking Blog</h1>
+      {% if user %}
+         <p style='display: inline;'>Welcome, {{user.username}}!</p>
+      {% else %}
+         <p style='display: inline;'>Welcome, Guest!</p>
+      {% endif %}
+   </body>
+</html>
